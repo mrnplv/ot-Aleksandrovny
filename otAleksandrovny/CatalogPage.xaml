@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="otAleksandrovny.CatalogPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20, 20, 20, 20" Spacing = "15" Orientation = "Vertical" >
+            <Label  Text = "Каталог продукции"
+                    HorizontalTextAlignment = "Center"
+                    FontSize = "30"
+                    TextColor = "DarkOrchid"
+                    FontFamily = "MontserratSB"/>
+            <CollectionView ItemsSource="{Binding ProductList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <SwipeView.LeftItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="В корзину"
+                                               IconImageSource="cart.png"
+                                               BackgroundColor="LightGreen"
+                                               Command="{Binding Path=CollectionViewModel.AddCommand}" CommandParameter="{Binding}"/>
+                                    <SwipeItem Text="Удалить"
+                                               IconImageSource="delete.png"
+                                               BackgroundColor="LightPink"
+                                               Command="{Binding Path=CollectionViewModel.RemoveCommand}" CommandParameter="{Binding}"/>
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
+                            <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                                <Frame Grid.RowSpan="2"
+                                       BorderColor = "DimGray"
+                                       CornerRadius = "10"
+                                       Padding="0"
+                                       HasShadow = "True">
+                                    <Image Source="{Binding Image}"
+                                           Aspect="AspectFill"
+                                           HeightRequest="60"
+                                           WidthRequest="90"
+                                           VerticalOptions="FillAndExpand"/>
+                                </Frame>
+                                <Label Grid.Column="1"
+                                   Text="{Binding Name}"
+                                   FontSize = "15"
+                                   TextColor = "MediumOrchid"
+                                   FontAttributes="Bold" 
+                                   VerticalOptions="End"/>
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="{Binding Price1}"
+                                   TextColor = "DimGray"
+                                   VerticalOptions="Start" />
+                        </Grid>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button  Text = "Перейти в корзину"
+                     TextTransform = "None"
+                     TextColor = "White"
+                     BorderColor = "Gray"
+                     BorderWidth = "1"
+                     CornerRadius = "10"
+                     HeightRequest = "60"
+                     WidthRequest = "300"
+                     FontSize = "18"
+                     FontFamily = "MontserratSB"
+                     BackgroundColor = "Orchid"
+                     HorizontalOptions = "Center"
+                     Clicked="CartButton_Click"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

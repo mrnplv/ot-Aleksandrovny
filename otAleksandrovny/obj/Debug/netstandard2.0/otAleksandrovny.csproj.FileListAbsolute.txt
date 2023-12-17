@@ -1,0 +1,15 @@
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\otAleksandrovny.csproj.AssemblyReference.cache
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\otAleksandrovny.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\otAleksandrovny.AssemblyInfoInputs.cache
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\otAleksandrovny.AssemblyInfo.cs
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\otAleksandrovny.csproj.CoreCompileInputs.cache
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\bin\Debug\netstandard2.0\otAleksandrovny.deps.json
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\bin\Debug\netstandard2.0\otAleksandrovny.dll
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\bin\Debug\netstandard2.0\ref\otAleksandrovny.dll
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\bin\Debug\netstandard2.0\otAleksandrovny.pdb
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\otAleksandrovny.dll
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\refint\otAleksandrovny.dll
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\otAleksandrovny.pdb
+C:\Users\marin\Desktop\otAleksandrovny\otAleksandrovny\obj\Debug\netstandard2.0\CatalogPage.xaml.g.cs
