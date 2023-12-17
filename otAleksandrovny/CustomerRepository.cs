@@ -15,25 +15,6 @@ namespace otAleksandrovny
         {
             return database.Table<Customer>().ToList();
         }
-        //public Customer GetItem(int id)
-        //{
-        //    return database.Get<Customer>(id);
-        //}
-        //public int DeleteItem(int id)
-        //{
-        //    return database.Delete<Customer>(id);
-        //}
-        //public int SaveItem(Customer item)
-        //{
-        //    if (item.ID == 0)
-        //    {
-        //        return database.Insert(item);
-        //    }
-        //    else
-        //    {
-        //        return 0;
-        //    }
-        //}
         public bool LoginValidate(string email, string password)
         {
             var data = database.Table<Customer>();
