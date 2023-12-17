@@ -13,12 +13,6 @@ namespace otAleksandrovny
         public ObservableCollection<ProductViewModel> ProductList { get; }
        
         public static ObservableCollection<ProductViewModel> selectedProductsList { get; set; }
-        //private static ObservableCollection<ProductViewModel> SelectedProductsList;
-        //public static ObservableCollection<ProductViewModel> selectedProductsList
-        //{
-        //    get { return SelectedProductsList; }
-        //    set { SelectedProductsList = value; }
-        //}
 
         public ProductsCollectionViewModel()
         {
@@ -48,14 +42,8 @@ namespace otAleksandrovny
             else
             {
                 product.ProductCount = 1;
-                /*product.CollectionViewModel = this;*/ //???
                 selectedProductsList.Add(product);
-            }            
-            //ProductViewModel product = productObj as ProductViewModel;
-            //if (selectedProductsList.Contains(product)) return;
-            //selectedProductsList.Add(product);
-
-            
+            }                        
         }
         private void RemoveFromCart(object productObj)
         {
