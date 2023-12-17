@@ -27,11 +27,6 @@ namespace otAleksandrovny
                 Spacing = 15,
                 Orientation = StackOrientation.Vertical
             };
-            //registration.Children.Add(new Image
-            //{
-            //    Source = "logo.png",
-            //    HorizontalOptions = LayoutOptions.Center
-            //});
             registration.Children.Add(new Label
             {
                 Text = "Регистрация",
