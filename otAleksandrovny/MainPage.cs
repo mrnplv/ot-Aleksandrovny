@@ -13,7 +13,6 @@ namespace otAleksandrovny
         Entry Password;
         Button loginButton;
         Button registerButton;
-        ListView customersList = new ListView();
        
         public MainPage()
         {
@@ -86,11 +85,6 @@ namespace otAleksandrovny
             registerButton.Clicked += RegisterButton_Click;
             loginButton.Clicked += LoginButton_Click;
             this.Content = login;
-        }
-        protected override void OnAppearing()
-        {
-            customersList.ItemsSource = App.Database.GetItems();
-            base.OnAppearing();
         }
         private async void RegisterButton_Click(object sender, EventArgs e)
         {
