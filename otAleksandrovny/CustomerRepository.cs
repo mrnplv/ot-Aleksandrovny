@@ -11,10 +11,6 @@ namespace otAleksandrovny
             database = new SQLiteConnection(databasePath);
             database.CreateTable<Customer>();
         }
-        public IEnumerable<Customer> GetItems()
-        {
-            return database.Table<Customer>().ToList();
-        }
         public bool LoginValidate(string email, string password)
         {
             var data = database.Table<Customer>();
